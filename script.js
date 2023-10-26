@@ -28,9 +28,9 @@ function getComputerChoice() {
 //    - Same
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
-  if ((playerSelection == "rock" && computerSelection == "paper") ||
-    (playerSelection == "paper" && computerSelection == "scissor") ||
-    (playerSelection == "scissor" && computerSelection == "rock")) {
+  if ((playerSelection == "rock" && computerSelection == "scissor") ||
+    (playerSelection == "paper" && computerSelection == "rock") ||
+    (playerSelection == "scissor" && computerSelection == "paper")) {
 
     return `You Win! ${playerSelection} beats ${computerSelection}`;
 
